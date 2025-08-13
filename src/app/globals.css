@@ -1,14 +1,17 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* colors */
+  --mirage: #0C1E21;
+  --darkGrey: #9A9FA0;
+  --white: #FFFFFF;
+  --lightBorder: #FFFFFF1A;
+  --cultured: #f4f8f8;
+  --darkBorder: #0C1E2126;
+  --lightPara: #06272C99;
+
+  /* font families */
+  --font-roboto-mono: 'Roboto Mono Variable', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 html,
 body {
@@ -16,13 +19,12 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+body {  
+  font-family: 'Inter Variable', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 * {
   box-sizing: border-box;
@@ -30,13 +32,254 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/********************** Global Colors Class **********************/
+.bg-mirage {
+  background-color: var(--mirage);
+}
+.bg-cultured {
+  background-color: var(--cultured);
+}
+.bg-white {
+  background-color: var(--white) !important;
+}
+.mirage {
+  color: var(--mirage);
+}
+.white {
+  color: var(--white);
+}
+.darkGrey {
+  color: var(--darkGrey);
+}
+.lightPara {
+  color: var(--lightPara);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+/********************** Global Widths **********************/
+.width20 {
+  width: 20%;
+}
+.width31 {
+  width: 31.5%;
+}
+.width40 {
+  width: 40%;
+}
+.width50 {
+  width: 50%;
+}
+.width60 {
+  width: 60%;
+}
+.width80 {
+  width: 80%;
+}
+.width100 {
+  width: 100%;
+}
+
+/********************** Global Padding **********************/
+.pxy-4 {
+  padding: 4rem;
+}
+.pxy-6 {
+  padding: 6rem;
+}
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.pxy-40 {
+  padding: 2.5rem;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.px-4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-8 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.py-12 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.py-16 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+.py-24 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .pd-4 {
+    padding: 1rem;
   }
+}
+
+/********************** Global Flex **********************/
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.gap10 {
+  gap: 10px;
+}
+.gap20 {
+  gap: 20px;
+}
+.gap40 {
+  gap: 40px;
+}
+.gap60 {
+  gap: 60px;
+}
+
+/********************** Text Alignment **********************/
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/********************** Global Heading **********************/
+.head88 {
+  font-size: 88px;
+  line-height: 89px;
+  font-weight: 400;
+}
+.head75 {
+  font-size: 75px;
+  line-height: 80px;
+  font-weight: 400;
+}
+.head68 {
+  font-size: 68px;
+  line-height: 75px;
+  font-weight: 400;
+}
+.head61 {
+  font-size: 61px;
+  line-height: 74px;
+  font-weight: 400;
+}
+.head44 {
+  font-size: 44px;
+  line-height: 49px;
+  font-weight: 400;
+}
+.head32 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+}
+.head24 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+}
+/* Small Heading in section with bottom border */
+.sectionHead13 {
+  font-family: var(--font-roboto-mono) !important;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--darkBorder);
+}
+.subhead12 {
+  font-family: var(--font-roboto-mono) !important;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(30px);
+  background-color: #AAAAAA1F;
+  border: 1px solid var(--lightBorder);
+  border-radius: 5px;
+  color: var(--white);
+  padding: 8px;
+  width: fit-content;
+}
+.subhead12-dark {
+  background-color: var(--cultured);
+  color: var(--mirage);
+  border-color: #e8eded;
+}
+
+/********************** Global Paragraphs **********************/
+.para20 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.para18 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.para16 {
+  font-size: 16px;
+  line-height: 25.5px;
+  font-weight: 400;
+}
+.para13 {
+  font-family: var(--font-roboto-mono) !important;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }

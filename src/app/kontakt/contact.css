@@ -1,0 +1,36 @@
+.contact-DE .social-links {
+    list-style: none;
+    padding: 0;
+}
+.contact-DE .social-links li a{
+    font-family: var(--font-roboto-mono) !important;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--mirage);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-DE .social-links li svg {
+    background: var(--white) ;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    padding: 7px;
+    border: 1px solid #e8eded;
+}
+
+
+/* office card */
+.office-card img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(44%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+}

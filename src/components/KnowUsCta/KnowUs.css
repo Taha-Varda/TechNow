@@ -1,0 +1,27 @@
+.knowUs {
+    background-color: #142528;
+}
+
+.knowUs .contact-info {
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+}
+
+.knowUs .info-icon {
+    background: #203033 !important;
+    backdrop-filter: blur(2rem);
+    border: 1px solid rgba(255,255,255,.12) !important;
+}
+
+.knowUs .info-text {
+    border-bottom-color: var(--white);
+}
+
+.knowUs .info-text:hover {
+    border-bottom-color: transparent;
+}
+
+.knowUs .contact-info li a {
+    color: var(--white);
+}

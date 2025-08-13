@@ -1,0 +1,61 @@
+.leftRightImgTxt {
+    position: sticky;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.leftRightImgTxt .left {
+    background-image: url('../assets/Services-bg.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Changed from fixed to sticky */
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 1;
+}
+
+.leftRightImgTxt .left::before {
+    background-color: var(--mirage);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.leftRightImgTxt .left h3 {
+    z-index: 2;
+}
+
+/* right side */
+.leftRightImgTxt .right {
+    width: 50%;
+    min-height: 100vh;
+    overflow-y: auto; /* Allow scrolling */
+}
+.sevicesList {
+    list-style: none;
+}
+.sevicesList li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.sevicesList li svg {
+    color: var(--mirage);
+    font-size: 12px;
+    background-color: var(--cultured);
+    border-radius: 50%;
+    padding: 0.4rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8eded;
+}

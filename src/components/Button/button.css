@@ -1,0 +1,41 @@
+.globalBtn {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 14px;
+  font-weight: 400;
+  border: 1px solid;
+}
+.white-btn {
+  background-color: var(--white);
+  color: var(--mirage);
+  border-color: var(--white);
+}
+.trans-btn {
+  backdrop-filter: blur(30px);
+  background-color: #AAAAAA1F;
+  border-color: var(--lightBorder);
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.effectBtn .button-text {
+  display: inline-block;
+  height: 18px; /* Adjust based on font size */
+  overflow: hidden;
+}
+.effectBtn .button-text div {
+  transform: translateY(0);
+  transition: 0.6s cubic-bezier(.16,1,.3,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px; /* Should match parent height */
+}
+.effectBtn:hover .button-text div {
+  transform: translateY(-100%) !important;
+}
+.effectBtn:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,31 @@
+.blur-cta {
+    background-image: url('../../assets/blur-bg.webp');
+    min-height: 410px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blur-cta::before {
+    background-color: var(--mirage);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+.blur-cta svg {
+    fill: var(--white);
+}
+.blur-cta h2 , .blur-cta svg, .md-profile {
+    z-index: 3;
+}
+.md-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid var(--white);
+}

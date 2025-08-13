@@ -1,0 +1,50 @@
+/* components/LogoSlider/LogoSlider.css */
+.logo-slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-slider:hover {
+  animation-play-state: paused;
+}
+
+.logo-item {
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-item a {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-slider img.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo-slider img.grayscale:hover {
+  filter: grayscale(0%);
+}
+
+.logo-slider img {
+  max-width: 130px;
+  height: 90px;
+  object-fit: contain;
+}

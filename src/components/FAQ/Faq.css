@@ -1,0 +1,19 @@
+.faq-item {
+    border-bottom: 1px solid #E8EDED;
+    
+}
+.faq-question {
+    border: 0; 
+    cursor: pointer;  
+}
+.faq-answer {
+    margin-top: 7px;
+}
+.toggle-icon {
+    background-color: var(--cultured);
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid var(--darkGrey);
+    font-size: 18px;
+    line-height: 0;
+}

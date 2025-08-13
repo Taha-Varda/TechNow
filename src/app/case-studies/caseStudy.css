@@ -1,0 +1,31 @@
+.cases-list {
+    gap: 0;
+}
+.case-item {
+    position: relative;
+    /* border-bottom: 1px solid var(--darkGrey); */    
+}
+.case-item img {
+    width: 100vw;
+    height: 90vh;
+}
+.case-item::before {
+    background-color: var(--mirage);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0.7;
+    height: 90vh;
+}
+.case-item .case-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
