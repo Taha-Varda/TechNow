@@ -1,5 +1,7 @@
 "use client"
 
+import '../i18n'
+
 import Hero from '@/components/VideoHero/Hero';
 import './home.css';
 import LogoSlider from '@/components/LogoSlider/LogoSlider';
@@ -11,6 +13,8 @@ import { IoCheckmark } from "react-icons/io5";
 import UniversalCTA from '@/components/UniversalCTA/UniversalCTA';
 import ContactInfo from '@/components/ContactInfo/ContactInfo';
 import KnowUsSection from '@/components/KnowUsCta/KnowUs';
+
+import Welcome from '@/components/Welcome'
 
 export default function Home() {
   const faqs = [
@@ -43,6 +47,8 @@ export default function Home() {
 
   return (
     <div className="homepage">
+      <Welcome />
+
       <Hero 
         subtitle="KI Beratung"
         highlightText="Innovate Today,"

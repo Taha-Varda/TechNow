@@ -1,6 +1,6 @@
 import React from "react";
 import "./i18n"; // <- import i18n config once
-import Welcome from "./components/Welcome";
+import Welcome from "../src/components/Welcome"
 
 function App() {
   return (
